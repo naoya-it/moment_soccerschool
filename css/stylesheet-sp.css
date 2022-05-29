@@ -1,0 +1,173 @@
+/*スマホ用　CSSを記述（本案件はモバイルファーストで制作していく。）*/
+/*PC用のやつは、iPad以上をＰＣ画面から見えるように、幅は767px以下がスマホ版としよう。*/
+
+body{
+    margin:0; /*これは定型として覚えておく*/
+    padding:0;/*これは定型として覚えておく*/
+    /*なぜか。ブラウザによってbodyには、微妙に余白があったりして挙動が安定しないから。*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.aaa{
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+header{
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    margin-top:20px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    margin-left: 35px;
+    height:20px;
+}
+
+.menu-icon{
+    transition-duration: 0.2s;
+    height: 20px;
+    background-color: aqua;
+}
+
+.menu-pc{
+    display: none;
+}
+
+.menu-list-pc{
+    display: none;
+}
+
+.menu img{
+    height: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    height: 120vh;
+    position:fixed;
+    width:100%;
+    z-index:10;
+    background-color:darkgray;
+    opacity: 0.9;
+    top:0;
+    left:0;
+}
+
+
+.modal-bg{
+    width: 50%;
+    max-height: 300px;
+    margin: auto;
+    padding: 20px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: red;
+    border-radius: 5px;
+    position: absolute;
+}
+
+nav{
+    width:90%;
+    height:80vh;
+    background-color: antiquewhite;
+}
+
+.modal ul{
+    display: flex;
+    flex-flow: column;
+}
+
+.js-modal-close{
+    display: flex;
+    background-color: blue;
+    font-size:40px;
+    position:relative;
+}
+
+
+
+
+
+/*とりあえずのリセット*/
+div,p{margin: 0;padding: 0;}
+
+/*ここからモーダル用*/
+.js-modal__bg {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color:red;
+}
+.js-modal__main {
+  width: 80%;
+  max-height: 300px;
+  margin: auto;
+  padding: 20px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+}
+.js-modal__main__scroll {
+  max-height: 200px;
+  margin-bottom: 20px;
+  overflow: scroll;
+}
+.js-modal__btn {
+  cursor: pointer
+}
+.js-modal__btn--close {
+  width: 30px;
+  height: 30px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  z-index: 101;
+  cursor:pointer;
+}
+.js-modal__btn--close:before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border-right:2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  top:12px;
+  left:-3px;
+}
+.js-modal__btn--close:after{
+  content:"";
+  width: 20px;
+  height: 20px;
+  border-right:2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top:-2px;
+  left:-3px;
+}
+

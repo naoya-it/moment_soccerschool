@@ -1,0 +1,118 @@
+<!--■jsパート暫定-->
+<!--jqueryの読み込み-->
+<script src="js\jquery-3.6.0.min.js"></script>
+<!--モーダルウィンドウ挙動-->
+<script>
+$(function(){
+  $('.menu-icon').on('click',function(){
+      $('.js-modal').fadeIn();
+      return false;
+  });
+
+  $('.js-modal-close').on('click',function(){
+      $('.js-modal').fadeOut();
+      return false;
+  });
+});
+
+$(function(){
+  $('.slide_img').slick({
+    dots:true
+  });
+});
+</script>
+<!--■jsパート暫定-->
+
+<div class="header-logo"><a href="#">ロゴ</a></div>
+<div class="menu-icon">
+    <a href="#"><img src="../../img/header-nav-icon.svg" alt="img\header-nav-icon.svg"></a>
+</div>
+<div class="modal js-modal">
+    <div class="modal-bg"></div>
+    <nav>
+        <ul>
+            <a href="#">TOP</a>
+            <a href="#">スタッフ紹介</a>
+            <a href="#">レッスン</a>
+            <a href="#">イベント・スケジュール</a>
+        </ul>
+    </nav>
+    <a class="js-modal-close" href="">閉じる</a>
+</div>
+
+<style>
+/*スマホ用　CSSを記述（本案件はモバイルファーストで制作していく。）*/
+/*PC用のやつは、iPad以上をＰＣ画面から見えるように、幅は767px以下がスマホ版としよう。*/
+
+header{
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    margin-top:20px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    margin-left: 35px;
+    height:20px;
+}
+
+.menu-icon{
+    transition-duration: 0.2s;
+    height: 20px;
+    background-color: aqua;
+}
+
+.menu-pc{
+    display: none;
+}
+
+.menu-list-pc{
+    display: none;
+}
+
+.menu img{
+    height: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    height: 150vh;
+    position:fixed;
+    width:100%;
+    z-index:10;
+    background-color:darkgray;
+    opacity: 0.9;
+}
+
+
+.modal-bg{
+    background-color: blue;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    opacity: 1;
+}
+
+
+/*
+nav{
+    width:90%;
+    height:80vh;
+    background-color: antiquewhite;
+}
+
+.js-modal-close{
+    display: flex;
+    background-color: blue;
+    font-size:40px;
+    position:relative;
+}
+*/
+
+</style>
