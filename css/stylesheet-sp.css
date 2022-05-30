@@ -21,20 +21,20 @@ header{
 }
 
 .header-logo img{
-  width: 50px;
-  height:50px;
-  border-radius: 50%;
   margin-left:5%;
+  height: 45px;
 }
 
 .header-logo{
   height: 100%;
   width: 80%;
+  display: flex;
 }
 
 .header-logo a{
-  display:block;
+  display:flex;
   height: 100%;
+  width:180px;
 }
 
 .modal{
@@ -71,39 +71,41 @@ header{
 .top-img h2{
   position: absolute;
   color:white;
-  font-size: 50px;
+  font-size: 70px;
   z-index: 100;
   top: 50%;
 left: 50%;
 transform: translate(-50%, -120%);
 letter-spacing: 0.1em;
-
+width: 100%;
+text-align: center;
 }
 
 /*スライド部分*/
+
 .slide-contents{
   width:100%;
-  display: block;
+}
+
+.slider-img{
 }
 
 .slide-imgs{
-  width: 100%;
-  background-color: blue;
-
 }
 
 .slide-contents img{
-  max-height: 200px;
+  width: 100%;
+  max-height: 150px;
 }
 
 .slick-dots li button:before{
 	font-size:30px!important;
-  background-color: aqua;
 }
 
 .slick-slider{
-  display: flex;
   width: 100%;
-  background-color: blueviolet;
-  position:relative;
+  padding-right:50px;
+  text-align: center;
 }
+
+/*スライド部分 終わり*/
