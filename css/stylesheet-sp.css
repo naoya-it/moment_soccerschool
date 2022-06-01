@@ -18,6 +18,9 @@ header{
   background-color: black;
   display: flex;
   align-items: center;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
 .header-logo img{
@@ -110,6 +113,38 @@ text-align: center;
 }
 
 /*スライド部分 終わり*/
+
+/*コンテンツ部分*/
+/*見出し*/
+.caption{
+  position: relative;
+  padding: 0.3rem .5rem;
+  font-size: 1.3em;
+}
+
+.caption:before,
+.caption:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
+  background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+}
+
+.caption:before {
+  top: 0;
+}
+
+.caption:after {
+  bottom: 0;
+}
+
+/*見出し終わり*/
+
+
 
 /*footer*/
 .icons img{
