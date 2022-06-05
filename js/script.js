@@ -11,9 +11,11 @@ $(function(){
 
   $(function () {
     $('.js-open').click(function () {
+      $("body").addClass("no_scroll"); // 背景固定させるクラス付与
       $('#overlay, .modal-window').fadeIn();
     });
     $('.js-close').click(function () {
+      $("body").removeClass("no_scroll"); //
       $('#overlay, .modal-window').fadeOut();
     });
   });
