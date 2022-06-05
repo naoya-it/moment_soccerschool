@@ -142,6 +142,19 @@ text-align: center;
 .caption:after {
   bottom: 0;
 }
+
+.contents{
+  width:90%;
+  margin:0 auto;
+}
+
+.contents h3{
+  padding-left:1em;
+}
+
+.contents p{
+  padding-left:1em;
+}
 /*見出し終わり*/
 
 /*お問い合わせ・マップ部分*/
@@ -194,6 +207,7 @@ footer small{
   cursor: pointer;
 }
 
+/*モーダル部分　始まり*/
 /* モーダルウィンドウ */
 .modal-window {
   position: fixed;
@@ -206,6 +220,7 @@ footer small{
   border-radius: 5px;
   z-index: 11;
   padding: 2rem;
+  display: none;
 }
 /* 閉じるボタン */
 .button-close {
@@ -215,9 +230,6 @@ footer small{
   transform: translate(-50%, -50%);
   width: 200px;
   padding: 1em;
-  background-color: #c96931;
-  color: #eaeaea;
-  border-radius: 20rem;
   cursor: pointer;
 }
 
@@ -245,3 +257,9 @@ footer small{
     height: 100%;
     z-index: 10;
   }
+
+  /* 表示領域外へはスクロールさせない */
+.no_scroll {
+  overflow: hidden;
+}
+  /*モーダル部分終わり*/
