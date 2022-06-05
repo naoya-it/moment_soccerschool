@@ -15,7 +15,9 @@ a{
 
 header{
   height: 50px;
-  background-color: black;
+  background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
+  background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
   display: flex;
   align-items: center;
   position: fixed;
@@ -64,7 +66,6 @@ header{
   height: 300px;
   width: 100%;
   position:relative;
-  background-color: aqua;
   padding-top: 50px;
 }
 
@@ -89,7 +90,8 @@ text-align: center;
 /*スライド部分*/
 
 .slide-contents{
-  width:100%;
+  width:95%;
+  margin: 0 auto;
 }
 
 .slider-img{
@@ -103,14 +105,19 @@ text-align: center;
   max-height: 250px;
 }
 
+.slick-dots{
+  width:90%;
+}
+
 .slick-dots li button:before{
 	font-size:50px!important;
 }
 
 .slick-slider{
-  width: 100%;
+  width: 90%;
   padding-right:50px;
   text-align: center;
+  margin: 0 auto;
 }
 
 /*スライド部分 終わり*/
@@ -176,7 +183,9 @@ footer .icons{
 }
 
 footer{
-  background-color: black;
+  background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
+  background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
 }
 
 footer small{
