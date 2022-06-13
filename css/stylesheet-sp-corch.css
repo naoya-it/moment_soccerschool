@@ -9,7 +9,7 @@ body{
 }
 
 main{
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(235, 245, 255, 0.8)) ,url(../img/background.jpg);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(235, 245, 255, 0.8)) ,url(https://github.com/naoya-it/moment_soccerschool/blob/master/img/background.jpg?raw=true);
   background-size: cover;
   padding-bottom: 50px;
 }
