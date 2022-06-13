@@ -8,6 +8,12 @@ body{
     box-sizing: border-box;
 }
 
+main{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(235, 245, 255, 0.9)) ,url(/img/background.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -160,26 +166,29 @@ text-align: center;
 }
 
 .corches{
-  background-color: #3140c9;
   width: 100%;
 }
 
 .corch-box{
-  background-color: #30cfd0;
   width:80%;
   margin:0 auto;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
-.corch-img{
+.corch-box img{
   width: 100%;
-  height:150px;
-  background-color: yellow;
+  height: 250px;
 }
 
 .corch-text{
   width: 100%;
-  background-color: bisque;
-  min-height: 150px;
+  background-color: white;
+}
+
+.corch-text p{
+  margin-top:0px;
 }
 
 /*コンテンツ部分 終わり*/
@@ -217,6 +226,7 @@ footer small{
 .footer-logo{
   padding-top: 20px;
   padding-left:20px;
+  margin-top:0px;
 }
 
 .button-open {

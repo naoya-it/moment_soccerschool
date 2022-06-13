@@ -170,6 +170,32 @@ text-align: center;
 }
 /*見出し終わり*/
 
+/*料金表*/
+th,td{
+    text-align: center;
+    width: 20%;
+    min-width: 130px;
+    padding: 10px;
+    height: 60px;
+    border: 1px gray solid;
+}
+
+.price{
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.price tr:nth-child(odd){
+background-color: #dce6ff;
+}
+
+.price tr:nth-child(even){
+  background-color: white;
+  }
+
+
+
 /*お問い合わせ・マップ部分*/
 
 
