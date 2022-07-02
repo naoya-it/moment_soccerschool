@@ -9,9 +9,11 @@ body{
 }
 
 main{
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(235, 245, 255, 0.8)) ,url(../img/background.jpg);
+  background: linear-gradient(90deg, rgba(254, 254, 255, 0.863), rgba(155, 205, 255, 0.616)) ,url(../img/background.jpg);
   background-size: cover;
   padding-bottom: 50px;
+  color:#020101eb;
+  font-size: 20px;
 }
 
 a{
@@ -21,9 +23,11 @@ a{
 
 header{
   height: 50px;
-    background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
+  /*  background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
   background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
   background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+  */
+  background-color: white;
   display: flex;
   position: fixed;
   align-items: center;
@@ -133,7 +137,7 @@ text-align: center;
 .caption{
   position: relative;
   padding: 0.3rem .5rem;
-  font-size: 1.3em;
+  font-size: 25px;
 }
 
 .caption:before,
@@ -189,13 +193,16 @@ footer .icons{
 }
 
 footer{
+  /*
   background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867));
   background-image: -webkit-linear-gradient(right, #30cfd0 0%, #330867 100%);
   background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+  */
+  background-color: white;
 }
 
 footer small{
-  color: white;
+  color:black;
   display: block;
   text-align: center;
   margin-top :5px;
@@ -221,6 +228,10 @@ footer small{
   color: #eaeaea;
   border-radius: 20rem;
   cursor: pointer;
+}
+
+small{
+  color: black;
 }
 
 /*モーダル部分　始まり*/
