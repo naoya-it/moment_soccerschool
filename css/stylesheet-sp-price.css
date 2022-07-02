@@ -9,7 +9,11 @@ body{
 }
 
 main{
+<<<<<<< HEAD
   background: linear-gradient(90deg, rgba(254, 254, 255, 0.863), rgba(155, 205, 255, 0.616)) ,url(../img/background.jpg);
+=======
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(235, 245, 255, 0.8)) ,url(https://github.com/naoya-it/moment_soccerschool/blob/master/img/background.jpg?raw=true);
+>>>>>>> e50ac02890e7519fd76624bd1bf1e2d4e7b13b41
   background-size: cover;
   padding-bottom: 50px;
   color:#020101eb;
